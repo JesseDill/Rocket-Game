@@ -823,6 +823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rcsThrust: 250
   linearThrust: 1000
+  levelLoadDelay: 2
   mainEngine: {fileID: 8300000, guid: b2b6bdfbf02348841aace722551905bc, type: 3}
   win: {fileID: 8300000, guid: 210eae2c1ced74141941c34cb142d823, type: 3}
   fail: {fileID: 8300000, guid: b136700e23b10ce46960f904e255db1a, type: 3}
@@ -1121,15 +1122,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
       propertyPath: m_LocalRotation.x

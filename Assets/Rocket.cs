@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
@@ -20,6 +21,7 @@ public class Rocket : MonoBehaviour
     enum State { Alive, Dying, Transcending }
     State state = State.Alive;
 
+    bool collisionOn = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +38,20 @@ public class Rocket : MonoBehaviour
             RespondToThrustInput();
             RespondToRotateInput();
         }
+        if (Debug.isDebugBuild) { RespondToDebugKeys(); }
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L)) { LoadNextScene(); }
+        else if (Input.GetKeyDown(KeyCode.C)) { collisionOn = !collisionOn; }
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (state != State.Alive) { return; }
+
+        if (state != State.Alive || !collisionOn) { return; }
 
         switch (collision.gameObject.tag)
         {
@@ -80,13 +91,18 @@ public class Rocket : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene(1);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) { nextSceneIndex = 0; }
+        SceneManager.LoadScene(nextSceneIndex);
     }
 
     private void RespondToThrustInput()
     {
         float rotationThisFrame = rcsThrust * Time.deltaTime;
-        rigidBody.freezeRotation = true; //take manual control of rotation
+
+        rigidBody.angularVelocity = Vector3.zero; //removes rotation from physics
 
         if (Input.GetKey(KeyCode.A))//left
         {
@@ -96,7 +112,7 @@ public class Rocket : MonoBehaviour
         {
             transform.Rotate(-Vector3.forward*rotationThisFrame);
         }
-        rigidBody.freezeRotation = false;//resume physics control of rotation
+        
     }
 
     private void RespondToRotateInput()
