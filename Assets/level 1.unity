@@ -846,6 +846,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 235813904}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &725119213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6215649279784624972, guid: d9d32ac62a475574b8e85b9580347ca8,
+    type: 3}
+  m_PrefabInstance: {fileID: 798478771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &725119214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725119213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70ce6c7c31fc8644adb29319719aac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: -7, z: 0}
+  period: 2
+  movementFactor: 0
 --- !u!1001 &798478771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,17 +877,17 @@ PrefabInstance:
     - target: {fileID: 1539342183944571765, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.29
+      value: 2.91
       objectReference: {fileID: 0}
     - target: {fileID: 1539342183944571765, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.24
+      value: 4.09
       objectReference: {fileID: 0}
     - target: {fileID: 1539342183944571765, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.53
+      value: 16.93
       objectReference: {fileID: 0}
     - target: {fileID: 1539342183944571765, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
@@ -921,12 +942,17 @@ PrefabInstance:
     - target: {fileID: 1539342183944571765, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.8407025
+      value: 4.3455453
       objectReference: {fileID: 0}
     - target: {fileID: 6215649279784624972, guid: d9d32ac62a475574b8e85b9580347ca8,
         type: 3}
       propertyPath: m_Name
-      value: Terrain (12)
+      value: Special Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8435063776595789968, guid: d9d32ac62a475574b8e85b9580347ca8,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d32ac62a475574b8e85b9580347ca8, type: 3}
