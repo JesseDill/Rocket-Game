@@ -2193,6 +2193,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2650007934933950096, guid: d23daf0c3f05aa449a4ef89e0016829f,
+        type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650007934933950096, guid: d23daf0c3f05aa449a4ef89e0016829f,
+        type: 3}
+      propertyPath: field of view
+      value: 36.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950098, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_Name
@@ -2201,37 +2211,37 @@ PrefabInstance:
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9973717
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.914928
+      value: 13.80287
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.367172
+      value: -43.24745
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.110162154
+      value: -0.01200228
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.018734017
+      value: -0.0041464646
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0019142793
+      value: -0.00021150112
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.99373525
+      value: -0.99991935
       objectReference: {fileID: 0}
     - target: {fileID: 2650007934933950103, guid: d23daf0c3f05aa449a4ef89e0016829f,
         type: 3}
